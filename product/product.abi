@@ -1,0 +1,53 @@
+{
+    "version": "eosio::abi/1.0",
+    "structs": [{
+        "name": "product",
+        "base": "",
+        "fields": [{
+            "name": "id",
+            "type": "int64"
+        }, {
+            "name": "name",
+            "type": "string"
+        }, {
+            "name": "price",
+            "type": "int64"
+        }]
+    }, {
+        "name": "create",
+        "base": "",
+        "fields": [{
+            "name": "id",
+            "type": "int64"
+        }, {
+            "name": "name",
+            "type": "string"
+        }, {
+            "name": "price",
+            "type": "int64"
+        }]
+    }, {
+        "name": "query",
+        "base": "",
+        "fields": [{
+            "name": "id",
+            "type": "int64"
+        }]
+    }],
+    "actions": [{
+        "name": "create",
+        "type": "create",
+        "ricardian_contract": ""
+    }, {
+        "name": "query",
+        "type": "query",
+        "ricardian_contract": ""
+    }],
+    "tables": [{
+        "name": "products",
+        "type": "product",
+        "index_type": "i64",
+        "key_names": ["id"],
+        "key_types": ["int64"]
+    }]
+}
